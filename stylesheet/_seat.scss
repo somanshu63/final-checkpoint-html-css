@@ -1,0 +1,120 @@
+.selected-movie-header{
+    h3{
+        margin-bottom: 0.5rem;
+    }
+    ul{
+        li:nth-child(2){
+            margin-right: 2rem;
+        }
+    }
+}
+.seat-map{
+    padding: 3rem 20rem;
+    .alpha{
+        @extend%seatbox;
+        border: none;
+        color: $black-grey;
+    }
+    %seatbox{
+        width: 20px;
+        display: flex;
+        border-radius: 3px;
+        align-items: center;
+        justify-content: center;
+        height: 20px;
+        font-size: 10px;
+    }
+    .seat{
+        @extend%seatbox;
+        border: 1px solid $green;
+        margin: 0.3rem;
+    }
+    .Q1{
+        margin-left: 7.6875rem;
+    }
+    .N5, .O5, .P5, .J8, .K8, .L8, .M8, .A5, .B5, .C5, .D5, .E5, .F5, .G5, .H5{
+        margin-left: 5.625rem;
+
+    }
+    .I6{
+        margin-left: 13rem;
+    }
+    .A1, .B1, .C1, .D1, .E1, .F1, .G1, .H1, .P1, .O1, .N1{
+        margin-left: 5.875rem;
+    }
+    h4{
+        font-size: 15px;
+        margin: 1rem;
+    }
+    hr{
+        color: $white-grey;
+        height: 1px;
+        background-color: $white-grey;
+        border: 1px solid $white-grey;
+        margin: 1rem 3rem 0.5rem 1rem;
+    }
+    .row1{
+        .seat{
+            margin: 0 1rem;
+        }
+        .alphaQ{
+            margin: {
+                left: 0;
+                right: 4rem;
+            }
+        }
+    }
+}
+
+.selected-seat{
+    background-color: $green;
+    color: white;
+}
+.selected-sample-seat{
+    background-color: $green;
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    margin-right: 1rem;
+}
+.available-seat{
+    background-color: white;
+    color: $green;
+    border-color: $green;
+}
+.sold-seat{
+    background-color: $white-grey;
+    color: white;
+    border: none;
+}
+.movie-screen-box{
+    margin: 0 auto;
+    width: 18.75rem;
+    text-align: center;
+}
+.movie-screen{
+    width: 18.75rem;
+    height: 3.125rem;
+    transform: perspective(100px) rotateX(20deg);
+    background-color: $white-grey;
+}
+.seats-details{
+    margin-top: 50px;
+    .selected-seat, .sold-seat, .available-seat{
+        width: 20px;
+        height: 20px;
+        border-radius: 3px;
+        margin-right: 10px;
+    }
+    .available-seat{
+        border: 1px solid ;
+    }
+    span{
+        text-transform: capitalize;
+        margin-right: 25px;
+    }
+}
+.proceed{
+    margin: 2rem 31rem;
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>payment</title>
+    <link rel="stylesheet" href="stylesheet/style.css">
+    <script src="https://kit.fontawesome.com/615eec2c8f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="header container align-center flex">
+        <div class="flex align-center">
+            <a href="index.html" class="brand">
+                <img src="assets/Movie-Icon.png" alt="Bookmyshow">
+                BookMyShow
+            </a>
+        </div>
+        <label class="bars" for="toggle">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <input id="toggle" type="checkbox">
+        <div class="flex location menu align-center">
+            <form action="" class="form">
+                <input type="search" name="search" id="" placeholder="search movies" class="form-control">
+                <button class="button" type="submit"><i class="fa fa-search"></i></button>
+            </form>
+            <a href="">Roorkee<i class="fa-solid fa-caret-down"></i></a>
+            <a href="" class="btn-primary">Sign in</a>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="container selected-movie-header md-padding align-center flex">
+        <div class="selected-movie-details flex-50">
+            <h3></h3>
+            <ul class="flex flex-start align-center">
+                <li class="show-time"></li>
+                <li class="show-description"></li>
+                <li class="show-ua"></li>
+                <li class="show-selected-date">date</li>
+                <li class="show-selected-time">time</li>
+            </ul>
+        </div>
+        <a href="time.html" class="btn-primary">edit</a>
+    </div>
+    <div class="container booking-details sm-column flex">
+        <div class="flex-40 summary">
+            <h3>booking summary</h3>
+            <div class="flex align-center ticketnum">
+                <span class="numberticket">number of tickets:</span>
+                <span class="ticketnumber"></span>
+            </div>
+            <div class="flex">
+                <span class="ticket">
+                </span>
+                <span class="price">
+                </span>
+            </div>
+            <span class="audi"></span>
+            <div class="flex taxes">
+                <span class="tax">
+                    convenience fees
+                </span>
+                <span class="tax-price"></span>
+            </div>
+            <div class="flex">
+                <span class="total">sub total</span>
+                <span class="total-price"></span>
+            </div>
+            <a href="" class="btn-tertiary">proceed to make payment <i class="fa-solid fa-right-long"></i></a>
+        </div>
+        <div class="flex-50 payment">
+            <h3>payment options</h3>
+            <div class="payment-details">
+                <div class="debit-card">
+                    <h4>credit/debit card</h4>
+                    <form action="">
+                        <label for="cardnumber">card number</label>
+                        <input type="number" name="cardnumber" id="cardnumber" class="form-control-payment" placeholder="enter your card number">
+                        <label for="name">name of card holder</label>
+                        <input type="text" name="name" id="name" placeholder="name on the card" class="form-control-payment">
+                        <label for="expiry">expiry</label>
+                        <input type="date" name="expiry" id="expiry" class="form-control-payment" placeholder="enter expiry">
+                        <button class="btn-tertiary">make payment</button>
+                    </form>
+                </div>
+                <div class="wallets">
+                    <h4>wallets</h4>
+                    <label for="paytmupi">
+                        <img src="assets/paytm.png" alt="paytm" width="100px">
+                    </label>
+                    <input type="radio" name="wallet" id="paytmupi">
+                    <label for="phonepeupi">
+                        <img src="assets/phonepe.png" alt="phonepe" width="100px">
+                    </label>
+                    <input type="radio" name="wallet" id="phonepeupi">
+                </div>
+                <div class="upi">
+                    <h4>upi</h4>
+                    <label for="paytm">
+                        <img src="assets/paytm.png" alt="paytm" width="100px">
+                    </label>
+                    <input type="radio" name="upi" id="paytm">
+                    <label for="phonepe">
+                        <img src="assets/phonepe.png" alt="phonepe" width="100px">
+                    </label>
+                    <input type="radio" name="upi" id="phonepe">
+                    <label for="gpay" id="gpaylabel">
+                        <img src="assets/gpay.jpg" alt="gpay" width="100px">
+                    </label>
+                    <input type="radio" name="upi" id="gpay">                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="payment.js"></script>
+</main>
+<footer>
+    <div class="footer container padding">
+        <a href="" class="brand">
+            <img src="assets/Movie-Icon.png" alt="bookmyshow">
+        </a>
+        <div class="flex justify-center">
+            <a href="">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+        </div>
+        <small>Copyright &copy; All Rights are Reserved</small>
+    </div>
+</footer>
+</body>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>select</title>
+    <link rel="stylesheet" href="stylesheet/style.css">
+    <script src="https://kit.fontawesome.com/615eec2c8f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="header container align-center flex">
+        <div class="flex align-center">
+            <a href="index.html" class="brand">
+                <img src="assets/Movie-Icon.png" alt="Bookmyshow">
+                BookMyShow
+            </a>
+        </div>
+        <label class="bars" for="toggle">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <input id="toggle" type="checkbox">
+        <div class="flex location menu align-center">
+            <form action="" class="form">
+                <input type="search" name="search" id="" placeholder="search movies" class="form-control">
+                <button class="button" type="submit"><i class="fa fa-search"></i></button>
+            </form>
+            <a href="">Roorkee<i class="fa-solid fa-caret-down"></i></a>
+            <a href="" class="btn-primary">Sign in</a>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="container selected-movie-header md-column md-padding align-center flex">
+        <div class="selected-movie-details flex-40">
+            <h2></h2>
+            <div class="flex smd align-center">
+                <div class="rating flex flex-start md-column">
+                    <i class="fa-solid fa-heart"></i>
+                    <span class="percent"></span>
+                    <span class="percentnumber"></span>
+                </div>
+                <p class="screen"></p>
+                <p class="language"></p>
+                <ul class="flex flex-start align-center">
+                    <li class="show-time"></li>
+                    <li class="show-description"><i class="fa-solid fa-circle-dot"></i></li>
+                    <li class="show-ua"><i class="fa-solid fa-circle-dot"></i></li>
+                    <li class="show-releasedate"><i class="fa-solid fa-circle-dot"></i></li>
+                </ul>
+            </div>
+        </div>
+        <div class="selected-movie-cast flex-40">
+            <h4>cast & crew</h4>
+            <div class="flex flex-start">
+                <div class="cast-item item  flex-15">
+                    <img src="" class="width-100" alt="actor">
+                    <cite class="name"></cite>
+                </div>
+                <div class="cast-item item flex-15">
+                    <img src="" class="width-100" alt="actor">
+                    <cite class="name"></cite>
+                </div>
+                <div class="cast-item item flex-15">
+                    <img src="" class="width-100" alt="actor">
+                    <cite class="name"></cite>
+                </div>
+                <div class="cast-item item flex-15">
+                    <img src="" class="width-100" alt="actor">
+                    <cite class="name"></cite>
+                </div>
+                <div class="cast-item item flex-15">
+                    <img src="" class="width-100" alt="actor">
+                    <cite class="name"></cite>
+                </div>
+                <div class="crew-item item flex-15">
+                    <img src="" class="width-100" alt="director">
+                    <cite class="name"></cite>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container select-pvr">
+        <h3>select PVR</h3>
+        <div class="flex justify-center">
+            <div class="pvr">RR cinema</div>
+        </div>
+    </div>
+    <div class="container select-date">
+        <h3>select date</h3>
+        <div class="flex justify-center">
+            <div class="date">sun<span>10</span>jul</div>
+            <div class="date">mon<span>11</span>jul</div>
+            <div class="date">tue<span>12</span>jul</div>
+            <div class="date">wed<span>13</span>jul</div>
+            <div class="date">thu<span>14</span>jul</div>
+        </div>
+    </div>
+    <div class="container select-time">
+        <h3>select time</h3>
+        <div class="flex justify-center">
+            <div class="time">10:00 am</div>
+            <div class="time">12:00 pm</div>
+            <div class="time">14:30 pm</div>
+            <div class="time">16:50 pm</div>
+            <div class="time">20:00 pm</div>
+            <div class="time">21:45 pm</div>
+        </div>
+    </div>
+    <div class="container select-people">
+        <h3>select number of person</h3>
+        <div class="flex justify-center">
+            <div class="people">1</div>
+            <div class="people">2</div>
+            <div class="people">3</div>
+            <div class="people">4</div>
+            <div class="people">5</div>
+            <div class="people">6</div>
+            <div class="people">7</div>
+            <div class="people">8</div>
+            <div class="people">9</div>
+            <div class="people">10</div>
+        </div>
+        <a href="seat.html" class="btn-tertiary">proceed to select seats</a>
+    </div>
+    <script src="scripttime.js"></script>
+</main>
+<footer>
+    <div class="footer md-padding container padding">
+        <a href="" class="brand">
+            <img src="assets/Movie-Icon.png" alt="bookmyshow">
+        </a>
+        <div class="flex justify-center">
+            <a href="">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+        </div>
+        <small>Copyright &copy; All Rights are Reserved</small>
+    </div>
+</footer>
+</body>

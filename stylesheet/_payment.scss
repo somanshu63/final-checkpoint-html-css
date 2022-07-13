@@ -1,0 +1,81 @@
+.booking-details{
+    margin-top: 2rem;
+}
+.summary{
+    h3{
+        margin: 2rem 0;
+    }
+    .ticket, .audi, h3, .ticketnumber{
+        color: $red;
+    }
+    span{
+        margin: 1rem 0;
+        font: {
+            size: 18px;
+            weight: 400;
+        }
+        text-transform: capitalize;
+    }
+    .ticketnum{
+        margin: {
+            top: -1rem;
+            bottom: -1rem;
+        }
+    }
+    .ticketnumber{
+        font-size: 25px;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        border: 2px solid black;
+    }
+    div{
+        margin: 1rem 0;
+    }
+    .total, .total-price{
+        font: {
+            size: 20px;
+            weight: 500;
+        }
+    }
+    .btn-tertiary{
+        width: 100%;
+    }
+}
+.payment{
+    h3{
+        margin: 2rem 0;
+    }
+    h4{
+        margin: 1rem 0;
+        text-transform: capitalize;
+    }
+    form{
+        width: 300px;
+    }
+    .form-control-payment{
+        display: block;
+        width: 100%;
+        padding: 0.3rem;
+        font-size: 18px;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+        border: 2px solid $white-grey;
+        &:focus{
+            outline-color: $red;
+        }
+    }
+    label{
+        font-size: 17px;
+        margin-bottom: 0.3rem;
+        text-transform: capitalize;
+    }
+    .btn-tertiary{
+        outline: none;
+        border: none;
+        color: white;
+    }
+}

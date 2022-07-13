@@ -1,0 +1,124 @@
+%overview{
+    background-size: cover;
+    background-position: 50%;
+    padding: 2rem 3rem;
+}
+.overview-bhool{
+    @extend%overview;
+    background-image: linear-gradient(to right, rgba(black, 1) 40%, rgba($black-grey,0.1)), url(../assets/bhool2.jpg);
+}
+.overview-jugjug{
+    @extend%overview;
+    background-image: linear-gradient(to right, rgba(black, 1) 40%, rgba($black-grey,0.1)), url(../assets/jugjug2.jpg);
+}
+.overview-minions{
+    @extend%overview;
+    figure{
+        margin-top: 20px;
+    }
+    background-image: linear-gradient(to right, rgba(black, 1) 40%, rgba($black-grey,0.1)), url(../assets/minions2.jpg);
+}
+.overview-sherbagga{
+    @extend%overview;
+    background-image: linear-gradient(to right, rgba(black, 1) 40%, rgba($black-grey,0.1)), url(../assets/sherbagga2.jpg);
+}
+.overview-charlie{
+    @extend%overview;
+    figure{
+        margin-top: 20px;
+    }
+    background-image: linear-gradient(to right, rgba(black, 1) 40%, rgba($black-grey,0.1)), url(../assets/charlie2.jpg);
+}
+.overview-thor{
+    @extend%overview;
+    figure{
+        margin-top: 20px;
+    }
+    background-image: linear-gradient(to right, rgba(black, 1) 40%, rgba($black-grey,0.1)), url(../assets/thor.jpg);
+}
+.overview-khuda-hafiz{
+    @extend%overview;
+    background-image: linear-gradient(to right, rgba(black, 1) 40%, rgba($black-grey,0.1)), url(../assets/khudahaafiz2.jpg);
+}
+.overview-saukan{
+    @extend%overview;
+    background-image: linear-gradient(to right, rgba(black, 1) 40%, rgba($black-grey,0.1)), url(../assets/saukan.jpeg);
+}
+.movieoverview{
+    figure{
+        height: 350px;
+    }
+    .content{
+        padding-left: 50px;
+        h1, .rating, .review h3, .review h4, ul li{
+            color: white;
+        }
+        h1{
+            margin-top: 1rem;
+        }
+        .rating{
+            margin: 1rem 0;
+            font-size: 20px;
+            i{
+                color: $red;
+            }
+            .percent{
+                margin: 0 2rem 0 1rem;
+            }
+        }
+        .review{
+            padding: 1rem;
+            border-radius: 10px;
+            background-color: rgba($black-grey,0.5);
+            h3,h4{
+                font-size: 18px;
+            }
+            h4{
+                font: {
+                    size: 15px;
+                    weight: 400;
+                }
+                margin-top: 1rem;
+            }
+            .btn-secondary{
+                margin-left: 20px;
+            }
+        }
+        .screen, .language{
+            margin: 1rem 0;
+        }
+        ul{
+            margin-bottom: 1rem;
+            li{
+                display: flex;
+                align-items: center;
+                font-size: 18px;
+                i{
+                    font-size: 4px;
+                    margin: 0 10px;
+                }
+            }
+        }
+    }
+    .share{
+        font-size: 28px;
+        margin-left: 40px;
+    }
+}
+.aboutmovie{
+    p{
+        width: 80%;
+    }
+}
+.cast,.crew{
+    .cast-item, .crew-item{
+        text-align: center;
+        margin: 0 24px;
+        img{
+            border-radius: 50%;
+        }
+        .name{
+            margin: 0.5rem 0;
+        }
+    }
+}

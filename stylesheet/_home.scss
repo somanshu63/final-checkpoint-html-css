@@ -1,0 +1,121 @@
+.header{
+    background-color: $bg-blue;
+    padding: {
+        top: 1rem;
+        bottom: 1rem;
+    };
+    #toggle, .bars{
+        display: none;
+    }
+    .brand{
+        font-size: 36px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        img{
+            margin-right: 0.5rem;
+            width: 50px;
+            height: 50px;
+        }
+    }
+    .form{
+        margin-right: 20px;
+        position: relative;
+        border-radius: 8px;
+        .form-control{
+            width: 100%;
+            border-radius: 5px;
+            height: 40px;
+            font-size: 18px;
+            text-transform: capitalize;
+            padding: 1rem 3rem;
+            &:focus{
+                outline: 2px solid $green;
+            }
+        }
+        .button{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 90%;
+            margin-top: 2px;
+            width: 40px;
+            background-color: white;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+        }
+    }
+    .location{
+        i{
+            margin: {
+                left: 3px;
+                right: 24px;
+            }
+        }
+    }
+}
+.banner{
+    width: 100%;
+    height: 300px;
+    overflow: auto;
+    flex-wrap: nowrap;
+    padding: {
+        left: 0;
+        right: 0;
+    }
+    &:hover > .moviebanner{
+        animation-play-state: paused;
+    }
+    .moviebanner{
+        flex: 0 0 50%;
+        animation: slide 40s linear 5s infinite;
+    }
+}
+@keyframes slide {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(-3750px, 0, 0);
+    }
+  }
+  .movies{
+    h1{
+        margin: 2rem 0 3rem 0;
+        text-align: center;
+      }
+  }
+.movies-list{
+    grid-template-columns: repeat(4, 13rem);
+    gap: 6.25rem 3.125rem;
+    padding: 0 6rem;
+    .movie-item{
+        img{
+            width: 100%;
+            height: 350px;
+            border-radius: 12px;
+        }
+        h3{
+            margin: 1rem 0;
+        }
+    }
+}
+.footer{
+    background-color: $black-grey;
+    margin-top: 2rem;
+    text-align: center;
+    .brand{
+        img{
+            width: 200px;
+        }
+    }
+    i{
+        margin: 2rem 1rem;
+        color: $white-grey;
+        font-size: 2rem;
+    }
+    small{
+        color: $white-grey;
+    }
+}
